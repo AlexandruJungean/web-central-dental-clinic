@@ -401,12 +401,12 @@ function MaterialsSection() {
 function ProcessSteps() {
   const steps = [
     { n: "1", title: "Alegi planul", text: "Discutăm, răspundem la întrebări, stabilim direcția." },
-    { n: "2", title: "Semnare + avans 30%", text: "Confirmăm colaborarea, blocăm perioada de livrare." },
+    { n: "2", title: "Semnare contract", text: "Confirmăm colaborarea, blocăm perioada de livrare." },
     { n: "3", title: "Ne trimiți materialele", text: "Logo, fotografii, prețuri, echipa — tot ce ai în lista de mai sus." },
     { n: "4", title: "Dezvoltăm", text: "Construim website-ul. Primești update-uri pe parcurs." },
-    { n: "5", title: "Prima versiune + 40%", text: "Prezentăm versiunea funcțională, discutăm feedback." },
+    { n: "5", title: "Prima versiune", text: "Prezentăm versiunea funcțională, discutăm feedback." },
     { n: "6", title: "Revizuiri", text: "Implementăm ajustările solicitate." },
-    { n: "7", title: "Lansare + 30% final", text: "Publicăm site-ul, configurăm analytics, totul live." },
+    { n: "7", title: "Lansare", text: "Publicăm site-ul, configurăm analytics, totul live." },
   ];
 
   return (
@@ -438,23 +438,6 @@ function ProcessSteps() {
           ))}
         </div>
 
-        <div className="mt-14 rounded-2xl border border-border bg-surface p-6">
-          <p className="text-sm font-bold text-foreground">Condiții de plată</p>
-          <div className="mt-3 grid grid-cols-3 gap-4 text-center text-sm">
-            <div>
-              <p className="text-2xl font-extrabold text-brand">30%</p>
-              <p className="text-muted">avans</p>
-            </div>
-            <div>
-              <p className="text-2xl font-extrabold text-brand">40%</p>
-              <p className="text-muted">prima versiune</p>
-            </div>
-            <div>
-              <p className="text-2xl font-extrabold text-brand">30%</p>
-              <p className="text-muted">la lansare</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
