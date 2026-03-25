@@ -1,18 +1,19 @@
-export default function ImagePlaceholder({
-  label,
-  className = "",
-  aspect = "16/9",
-}: {
+interface ImagePlaceholderProps {
   label: string;
+  aspectRatio?: string;
   className?: string;
-  aspect?: string;
-}) {
+}
+
+export function ImagePlaceholder({
+  label,
+  aspectRatio = "aspect-[4/3]",
+  className = "",
+}: ImagePlaceholderProps) {
   return (
     <div
-      className={`flex items-center justify-center rounded-lg bg-brand-light text-brand-dark ${className}`}
-      style={{ aspectRatio: aspect }}
+      className={`flex items-center justify-center border border-dashed border-gray-separator bg-gray-bg text-center text-sm text-gray-subtle ${aspectRatio} ${className}`}
     >
-      <span className="px-4 text-center text-sm font-medium">{label}</span>
+      <span className="max-w-[80%] leading-relaxed">{label}</span>
     </div>
   );
 }
