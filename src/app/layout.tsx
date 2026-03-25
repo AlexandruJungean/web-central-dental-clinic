@@ -1,20 +1,27 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import { Geist } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  display: "swap",
+});
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
-  title: "Central Dental Clinic | Clinică Stomatologică Sighetu Marmației",
+  title: "Central Dental Clinic | Sighetu Marmației",
   description:
-    "Clinică stomatologică modernă în Sighetu Marmației. Fațete dentare, implantologie avansată, ortodonție și tratamente complete pentru întreaga familie.",
+    "Clinică stomatologică premium în Sighetu Marmației. Estetică dentară, implantologie avansată și tratamente complete. By Dr. Șofineți Ivan Marian.",
   keywords: [
     "dentist Sighetu Marmației",
     "clinică stomatologică Maramureș",
@@ -25,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Central Dental Clinic | Sighetu Marmației",
     description:
-      "Stomatologie la standarde europene, chiar în inima Maramureșului.",
+      "Clinică stomatologică premium în Sighetu Marmației. By Dr. Șofineți Ivan Marian.",
     type: "website",
     locale: "ro_RO",
   },
@@ -38,9 +45,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ro">
-      <body className={`${outfit.variable} font-sans antialiased`}>
+      <body
+        className={`${geistSans.variable} ${cormorant.variable} antialiased`}
+      >
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>
