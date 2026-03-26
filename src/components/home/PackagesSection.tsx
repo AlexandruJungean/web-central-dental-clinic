@@ -12,7 +12,7 @@ const PACKAGES = [
     unit: "fațete dentare premium",
     description:
       "Zâmbet complet transformat, cu formă, proporții și culoare perfect adaptate trăsăturilor tale.",
-    price: "€X.XXX",
+    price: "€X.000",
     includes: [
       "Consultație de specialitate fără obligație financiară",
       "Plan de tratament complet personalizat",
@@ -27,7 +27,7 @@ const PACKAGES = [
     unit: "fațete dentare premium",
     description:
       "Pentru un zâmbet integral uniform, luminos și armonios — sus și jos.",
-    price: "€X.XXX",
+    price: "€X.000",
     includes: [
       "Consultație de specialitate fără obligație financiară",
       "Plan de tratament complet personalizat",
