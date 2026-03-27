@@ -248,21 +248,30 @@ export default function DentalTourismPage() {
           </ScrollReveal>
 
           <div className="mt-14 grid gap-0 border-t border-gray-separator md:grid-cols-2">
-            {BENEFITS.map((benefit, i) => (
-              <ScrollReveal key={benefit.number} delay={i * 0.08}>
-                <div className="border-b border-gray-separator py-8 md:py-10 md:odd:border-r md:odd:pr-10 md:even:pl-10">
-                  <span className="text-[13px] font-medium tracking-premium text-gray-subtle">
-                    {benefit.number}
-                  </span>
-                  <h3 className="mt-2 font-serif text-xl font-light text-foreground md:text-2xl">
-                    {benefit.title}
-                  </h3>
-                  <p className="mt-3 text-[15px] leading-relaxed text-gray-text">
-                    {benefit.text}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
+            {BENEFITS.map((benefit, i) => {
+              const isLeft = i % 2 === 0;
+              return (
+                <ScrollReveal key={benefit.number} delay={i * 0.08}>
+                  <div
+                    className={`border-b border-gray-separator py-8 md:py-10 ${
+                      isLeft
+                        ? "md:border-r md:pr-10"
+                        : "md:pl-10"
+                    }`}
+                  >
+                    <span className="text-[13px] font-medium tracking-premium text-gray-subtle">
+                      {benefit.number}
+                    </span>
+                    <h3 className="mt-2 font-serif text-xl font-light text-foreground md:text-2xl">
+                      {benefit.title}
+                    </h3>
+                    <p className="mt-3 text-[15px] leading-relaxed text-gray-text">
+                      {benefit.text}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              );
+            })}
           </div>
         </div>
       </section>
