@@ -8,17 +8,17 @@ const SERVICES = [
   {
     title: "Estetică dentară",
     description: "Fațete ceramice premium pentru zâmbetul pe care ți-l dorești.",
-    href: "/tratamente",
+    href: "/tarife",
   },
   {
     title: "Implantologie",
     description: "Soluții definitive pentru dinții lipsă. All‑on‑4, All‑on‑6.",
-    href: "/tratamente",
+    href: "/tarife",
   },
   {
     title: "Ortodonție",
     description: "Dinți drepți cu alignere transparente sau aparate moderne.",
-    href: "/tratamente",
+    href: "/tarife",
   },
 ];
 
