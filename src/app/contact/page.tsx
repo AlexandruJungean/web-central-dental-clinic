@@ -4,7 +4,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact — Central Dental Clinic",
+  title: "Contact - Central Dental Clinic",
   description:
     "Programează o consultație la Central Dental Clinic, Sighetu Marmației. Telefon, WhatsApp, email și formular de programare.",
 };

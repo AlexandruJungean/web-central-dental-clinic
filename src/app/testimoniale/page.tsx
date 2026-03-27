@@ -3,18 +3,18 @@ import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Testimoniale — Central Dental Clinic",
+  title: "Testimoniale - Central Dental Clinic",
   description:
     "Ce spun pacienții Central Dental Clinic din Sighetu Marmației. Testimoniale video și recenzii reale.",
 };
 
 const VIDEO_TESTIMONIALS = [
-  { id: "aZIiVDFbrgM", title: "Testimonial pacient #1 — Fațete dentare", duration: "2:30" },
-  { id: "aZIiVDFbrgM", title: "Testimonial pacient #2 — Implantologie", duration: "3:15" },
-  { id: "aZIiVDFbrgM", title: "Testimonial pacient #3 — Ortodonție", duration: "1:45" },
-  { id: "aZIiVDFbrgM", title: "Testimonial pacient #4 — Reabilitare totală", duration: "4:00" },
-  { id: "aZIiVDFbrgM", title: "Testimonial pacient #5 — Estetică dentară", duration: "2:10" },
-  { id: "aZIiVDFbrgM", title: "Testimonial pacient #6 — Dantură fixă", duration: "3:30" },
+  { id: "aZIiVDFbrgM", title: "Testimonial pacient #1 - Fațete dentare", duration: "2:30" },
+  { id: "aZIiVDFbrgM", title: "Testimonial pacient #2 - Implantologie", duration: "3:15" },
+  { id: "aZIiVDFbrgM", title: "Testimonial pacient #3 - Ortodonție", duration: "1:45" },
+  { id: "aZIiVDFbrgM", title: "Testimonial pacient #4 - Reabilitare totală", duration: "4:00" },
+  { id: "aZIiVDFbrgM", title: "Testimonial pacient #5 - Estetică dentară", duration: "2:10" },
+  { id: "aZIiVDFbrgM", title: "Testimonial pacient #6 - Dantură fixă", duration: "3:30" },
 ];
 
 const REVIEWS = [

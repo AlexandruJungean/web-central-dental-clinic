@@ -20,7 +20,7 @@ export async function submitContactForm(data: ContactFormData) {
       resend.emails.send({
         from: `Central Dental Clinic <${FROM_EMAIL}>`,
         to: NOTIFY_EMAIL,
-        subject: `Programare nouă: ${data.name} — ${data.treatment}`,
+        subject: `Programare nouă: ${data.name} - ${data.treatment}`,
         html: `
           <div style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #0A0A0A;">
             <h2 style="font-size: 20px; font-weight: 400; border-bottom: 1px solid #E5E5E5; padding-bottom: 16px;">
@@ -40,7 +40,7 @@ export async function submitContactForm(data: ContactFormData) {
       resend.emails.send({
         from: `Central Dental Clinic <${FROM_EMAIL}>`,
         to: data.email,
-        subject: "Confirmare programare — Central Dental Clinic",
+        subject: "Confirmare programare - Central Dental Clinic",
         html: `
           <div style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #0A0A0A;">
             <h2 style="font-size: 22px; font-weight: 400;">Mulțumim, ${data.name}!</h2>

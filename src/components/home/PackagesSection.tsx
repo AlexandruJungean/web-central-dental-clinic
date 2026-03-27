@@ -26,7 +26,7 @@ const PACKAGES = [
     count: "20",
     unit: "fațete dentare premium",
     description:
-      "Pentru un zâmbet integral uniform, luminos și armonios — sus și jos.",
+      "Pentru un zâmbet integral uniform, luminos și armonios - sus și jos.",
     price: "€X.000",
     includes: [
       "Consultație de specialitate fără obligație financiară",

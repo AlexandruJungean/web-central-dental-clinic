@@ -19,12 +19,12 @@ export function BeforeAfterSection() {
             <div className="relative overflow-hidden">
               <div className="grid grid-cols-2 gap-px bg-white/10">
                 <ImagePlaceholder
-                  label="BEFORE — Fotografie pacient înainte de tratament (close-up dantură)"
+                  label="BEFORE - Fotografie pacient înainte de tratament (close-up dantură)"
                   aspectRatio="aspect-[3/4] md:aspect-[4/3]"
                   className="!border-white/20 !bg-white/5 !text-white/50"
                 />
                 <ImagePlaceholder
-                  label="AFTER — Fotografie pacient după tratament (close-up dantură, aceeași iluminare și unghi)"
+                  label="AFTER - Fotografie pacient după tratament (close-up dantură, aceeași iluminare și unghi)"
                   aspectRatio="aspect-[3/4] md:aspect-[4/3]"
                   className="!border-white/20 !bg-white/5 !text-white/50"
                 />
@@ -40,7 +40,7 @@ export function BeforeAfterSection() {
             </div>
 
             <p className="mt-6 text-center text-sm text-white/40">
-              Fațete dentare ceramice — Pacient, 32 ani
+              Fațete dentare ceramice - Pacient, 32 ani
             </p>
           </div>
         </ScrollReveal>

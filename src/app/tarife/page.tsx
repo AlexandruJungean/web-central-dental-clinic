@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Tarife — Central Dental Clinic",
+  title: "Tarife - Central Dental Clinic",
   description:
     "Prețuri transparente pentru toate tratamentele stomatologice la Central Dental Clinic, Sighetu Marmației. Pachete și tarife individuale.",
 };

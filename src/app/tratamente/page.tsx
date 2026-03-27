@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Tratamente — Central Dental Clinic",
+  title: "Tratamente - Central Dental Clinic",
   description:
     "Servicii stomatologice complete la Central Dental Clinic, Sighetu Marmației. Fațete dentare, implantologie, ortodonție și multe altele.",
 };

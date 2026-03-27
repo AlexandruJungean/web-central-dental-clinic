@@ -16,7 +16,7 @@ export function DoctorSection() {
         <div className="grid items-center gap-12 md:grid-cols-2 md:gap-20">
           <ScrollReveal>
             <ImagePlaceholder
-              label="PORTRET EDITORIAL — Dr. Șofineți Ivan Marian. Bust sau 3/4, privire directă în cameră, fundal neutru, iluminare laterală premium."
+              label="PORTRET EDITORIAL - Dr. Șofineți Ivan Marian. Bust sau 3/4, privire directă în cameră, fundal neutru, iluminare laterală premium."
               aspectRatio="aspect-[3/4]"
               className="w-full"
             />
