@@ -48,7 +48,7 @@ export function BeforeAfterSection() {
         <ScrollReveal delay={0.25}>
           <div className="mt-10 text-center">
             <a
-              href="/cazuri-clinice"
+              href="/testimoniale"
               className="inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-premium text-white/50 transition-colors hover:text-white"
             >
               Vedeți mai multe cazuri
