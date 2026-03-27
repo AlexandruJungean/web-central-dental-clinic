@@ -4,7 +4,6 @@ import Image from "next/image";
 const FOOTER_LINKS = [
   { href: "/tratamente", label: "Tratamente" },
   { href: "/tarife", label: "Tarife" },
-  { href: "/dental-tourism", label: "Dental Tourism" },
   { href: "/testimoniale", label: "Testimoniale" },
   { href: "/contact", label: "Contact" },
 ];

@@ -1,23 +1,6 @@
-"use client";
-
 import { ScrollReveal } from "@/components/ScrollReveal";
-
-const TREATMENTS = [
-  "Consultație generală",
-  "Fațete dentare",
-  "Implantologie",
-  "Ortodonție",
-  "Albire dentară",
-  "Stomatologie generală",
-  "Pedodonție",
-  "Parodontologie",
-  "Endodonție",
-  "Chirurgie orală",
-  "Profilaxie",
-  "Radiologie",
-  "Turism dentar",
-  "Altele",
-];
+import { ContactForm } from "@/components/ContactForm";
+import { CONTACT } from "@/lib/constants";
 
 export function ContactSection() {
   return (
@@ -37,63 +20,9 @@ export function ContactSection() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.1}>
-              <form className="mt-12 space-y-6">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Nume"
-                    required
-                    className="w-full border-b border-white/20 bg-transparent py-3 text-[15px] text-white placeholder:text-white/30 outline-none transition-colors focus:border-white/60"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="tel"
-                    placeholder="Telefon sau WhatsApp"
-                    required
-                    className="w-full border-b border-white/20 bg-transparent py-3 text-[15px] text-white placeholder:text-white/30 outline-none transition-colors focus:border-white/60"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    required
-                    className="w-full border-b border-white/20 bg-transparent py-3 text-[15px] text-white placeholder:text-white/30 outline-none transition-colors focus:border-white/60"
-                  />
-                </div>
-                <div>
-                  <select
-                    required
-                    defaultValue=""
-                    className="w-full appearance-none border-b border-white/20 bg-transparent py-3 text-[15px] text-white/30 outline-none transition-colors focus:border-white/60 focus:text-white [&:not([value=''])]:text-white"
-                  >
-                    <option value="" disabled>
-                      Tratament dorit
-                    </option>
-                    {TREATMENTS.map((t) => (
-                      <option key={t} value={t} className="bg-black text-white">
-                        {t}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div>
-                  <textarea
-                    placeholder="Mesaj (opțional)"
-                    rows={3}
-                    className="w-full resize-none border-b border-white/20 bg-transparent py-3 text-[15px] text-white placeholder:text-white/30 outline-none transition-colors focus:border-white/60"
-                  />
-                </div>
-                <div className="pt-4">
-                  <button
-                    type="submit"
-                    className="inline-flex h-12 items-center px-10 text-[13px] font-medium uppercase tracking-premium bg-white text-black transition-opacity hover:opacity-80"
-                  >
-                    Programează-te
-                  </button>
-                </div>
-              </form>
+              <div className="mt-12">
+                <ContactForm variant="dark" />
+              </div>
             </ScrollReveal>
           </div>
 
@@ -101,45 +30,27 @@ export function ContactSection() {
             <ScrollReveal>
               <div className="space-y-8">
                 <div>
-                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">
-                    Adresă
-                  </p>
+                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">Adresă</p>
                   <p className="mt-2 text-[15px] text-white/70">
-                    Strada Andrei Mureșan 5
-                    <br />
-                    435500 Sighetu Marmației
+                    {CONTACT.address.street}<br />{CONTACT.address.city}
                   </p>
                 </div>
                 <div>
-                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">
-                    Telefon
-                  </p>
-                  <a
-                    href="tel:+40749165211"
-                    className="mt-2 block text-[15px] text-white/70 transition-colors hover:text-white"
-                  >
-                    +40 749 165 211
+                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">Telefon</p>
+                  <a href={CONTACT.phoneHref} className="mt-2 block text-[15px] text-white/70 transition-colors hover:text-white">
+                    {CONTACT.phone}
                   </a>
                 </div>
                 <div>
-                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">
-                    Email
-                  </p>
-                  <a
-                    href="mailto:ivanmariansofineti@gmail.com"
-                    className="mt-2 block text-[15px] text-white/70 transition-colors hover:text-white"
-                  >
-                    ivanmariansofineti@gmail.com
+                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">Email</p>
+                  <a href={`mailto:${CONTACT.email}`} className="mt-2 block text-[15px] text-white/70 transition-colors hover:text-white">
+                    {CONTACT.email}
                   </a>
                 </div>
                 <div>
-                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">
-                    Program
-                  </p>
+                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">Program</p>
                   <p className="mt-2 text-[15px] text-white/70">
-                    Luni – Vineri: 09:00 – 18:00
-                    <br />
-                    Sâmbătă: 09:00 – 14:00
+                    {CONTACT.schedule.weekdays}<br />{CONTACT.schedule.saturday}
                   </p>
                 </div>
               </div>
@@ -148,7 +59,7 @@ export function ContactSection() {
             <ScrollReveal delay={0.15}>
               <div className="mt-12">
                 <a
-                  href="https://maps.app.goo.gl/Y8AWSVvfizCp2ah17"
+                  href={CONTACT.maps}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-premium text-white/40 transition-colors hover:text-white"

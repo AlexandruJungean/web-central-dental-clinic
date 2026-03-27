@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const NAV_LINKS = [
   { href: "/tratamente", label: "Tratamente" },
   { href: "/tarife", label: "Tarife" },
-  { href: "/dental-tourism", label: "Dental Tourism" },
   { href: "/testimoniale", label: "Testimoniale" },
   { href: "/contact", label: "Contact" },
 ];

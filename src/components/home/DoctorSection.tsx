@@ -3,9 +3,10 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 const TEAM_MEMBERS = [
-  { name: "Dr. [Nume]", role: "Specializare" },
-  { name: "Dr. [Nume]", role: "Specializare" },
-  { name: "Dr. [Nume]", role: "Specializare" },
+  { name: "Dr. Brigitta", role: "Ortodonție" },
+  { name: "Dr. Andreea", role: "Parodontologie" },
+  { name: "Dr. Ionela", role: "Pedodonție" },
+  { name: "Dr. Ionuț", role: "Endodonție & Chirurgie" },
 ];
 
 export function DoctorSection() {
