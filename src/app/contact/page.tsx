@@ -112,7 +112,7 @@ export default function ContactPage() {
           <ScrollReveal>
             <div className="overflow-hidden border border-gray-separator">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.5!2d23.8895!3d47.9277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDU1JzM5LjciTiAyM8KwNTMnMjIuMiJF!5e0!3m2!1sro!2sro!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800!2d23.88827!3d47.926696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4737bbf9e5bc02a1%3A0xa52d0bda00f21948!2sROYAL%203D%20SMILE%20DESIGN%20SRL%20-%20CENTRAL%20DENTAL%20CLINIC!5e0!3m2!1sro!2sro"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
@@ -120,7 +120,7 @@ export default function ContactPage() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Central Dental Clinic pe Google Maps"
-                className="grayscale"
+                className=""
               />
             </div>
           </ScrollReveal>
