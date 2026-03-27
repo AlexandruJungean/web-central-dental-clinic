@@ -3,6 +3,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { CONTACT } from "@/lib/constants";
 import { DiasporaFormInner } from "./DiasporaFormInner";
+import { FAQSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   title: "Turism Dentar - Central Dental Clinic | Sighetu Marmației",
@@ -187,6 +188,15 @@ const VISIT_PERIODS = [
 export default function DentalTourismPage() {
   return (
     <>
+      <FAQSchema
+        items={FAQ.map((item) => ({ question: item.q, answer: item.a }))}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Acasă", url: "https://centraldental.ro" },
+          { name: "Turism Dentar", url: "https://centraldental.ro/dental-tourism" },
+        ]}
+      />
       {/* S1 - Hero */}
       <section className="relative flex min-h-[85vh] items-center overflow-hidden">
         <div
