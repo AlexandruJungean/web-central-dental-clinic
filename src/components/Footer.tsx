@@ -2,15 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 const FOOTER_LINKS = [
-  { href: "/tratamente", label: "Tratamente" },
+  { href: "/despre-noi", label: "Despre noi" },
   { href: "/tarife", label: "Tarife" },
   { href: "/testimoniale", label: "Testimoniale" },
   { href: "/contact", label: "Contact" },
 ];
 
 const LEGAL_LINKS = [
-  { href: "/politica-confidentialitate", label: "Politica de confidențialitate" },
+  { href: "/politica-confidentialitate", label: "Confidențialitate" },
   { href: "/termeni-si-conditii", label: "Termeni și condiții" },
+  { href: "/politica-cookies", label: "Cookies" },
 ];
 
 export function Footer() {
@@ -84,18 +85,26 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-[13px] text-white/30 md:flex-row">
-          <p>&copy; {new Date().getFullYear()} Central Dental Clinic</p>
-          <div className="flex gap-6">
-            {LEGAL_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="transition-colors hover:text-white/60"
-              >
-                {link.label}
-              </Link>
-            ))}
+        <div className="mt-16 border-t border-white/10 pt-8">
+          <div className="text-[12px] leading-relaxed text-white/25">
+            <p>
+              ROYAL 3D SMILE DESIGN S.R.L. · CUI 39231116 · Nr. Reg. Com. J20/553244/2018 · EUID ROONRC.J2018000553244
+            </p>
+          </div>
+
+          <div className="mt-6 flex flex-col items-start justify-between gap-4 text-[13px] text-white/30 md:flex-row md:items-center">
+            <p>&copy; {new Date().getFullYear()} Central Dental Clinic</p>
+            <div className="flex flex-wrap gap-4 md:gap-6">
+              {LEGAL_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="transition-colors hover:text-white/60"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

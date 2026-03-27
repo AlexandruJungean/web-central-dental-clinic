@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
-  { href: "/tratamente", label: "Tratamente" },
+  { href: "/despre-noi", label: "Despre noi" },
   { href: "/tarife", label: "Tarife" },
   { href: "/testimoniale", label: "Testimoniale" },
   { href: "/contact", label: "Contact" },
