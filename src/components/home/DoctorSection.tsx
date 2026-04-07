@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -45,10 +45,20 @@ type Doctor = typeof LEAD_DOCTOR | (typeof TEAM_MEMBERS)[number];
 
 export function DoctorSection() {
   const [selected, setSelected] = useState<Doctor | null>(null);
+  const sectionRef = useRef<HTMLElement>(null);
   const active = selected ?? LEAD_DOCTOR;
 
+  const selectMember = useCallback((member: Doctor | null) => {
+    setSelected(member);
+    if (member && window.innerWidth < 768 && sectionRef.current) {
+      setTimeout(() => {
+        sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 50);
+    }
+  }, []);
+
   return (
-    <section className="bg-white section-padding">
+    <section ref={sectionRef} className="bg-white section-padding">
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <div className="grid items-center gap-12 md:grid-cols-2 md:gap-20">
           <ScrollReveal>
@@ -101,7 +111,7 @@ export function DoctorSection() {
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                onClick={() => setSelected(null)}
+                onClick={() => selectMember(null)}
                 className="mt-6 text-[13px] font-medium uppercase tracking-premium text-gray-subtle transition-colors hover:text-foreground"
               >
                 ← Înapoi la Dr. Șofineți
@@ -118,7 +128,7 @@ export function DoctorSection() {
                     <button
                       key={member.name}
                       onClick={() =>
-                        setSelected(
+                        selectMember(
                           selected?.name === member.name ? null : member
                         )
                       }
