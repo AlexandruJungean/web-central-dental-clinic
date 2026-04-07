@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NAV_LINKS = [
+  { href: "/", label: "Acasă" },
   { href: "/despre-noi", label: "Despre noi" },
   { href: "/tarife", label: "Tarife" },
   { href: "/testimoniale", label: "Testimoniale" },
@@ -15,6 +17,7 @@ const NAV_LINKS = [
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -37,31 +40,36 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex h-20 max-w-[1200px] items-center justify-between px-6 md:px-10">
-          <Link href="/" className="relative z-50 flex items-center gap-3">
+          <Link href="/" onClick={() => setMenuOpen(false)} className="relative z-50 flex items-center gap-3">
             <Image
               src="/images/logo.png"
               alt="Central Dental Clinic"
               width={36}
               height={36}
-              className={`transition-all duration-500 ${scrolled ? "" : "invert brightness-0 md:invert-0 md:brightness-100"}`}
+              className="transition-all duration-500"
               priority
             />
           </Link>
 
           <nav className="hidden items-center gap-8 md:flex">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-[13px] font-medium uppercase tracking-[0.12em] transition-colors duration-300 ${
-                  scrolled
-                    ? "text-gray-subtle hover:text-foreground"
-                    : "text-foreground/50 hover:text-foreground"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`text-[13px] font-medium uppercase tracking-[0.12em] transition-colors duration-300 ${
+                    isActive
+                      ? "text-foreground"
+                      : scrolled
+                        ? "text-gray-subtle hover:text-foreground"
+                        : "text-foreground/50 hover:text-foreground"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </nav>
 
           <div className="hidden md:block">
@@ -116,7 +124,9 @@ export function Header() {
                   <Link
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="font-serif text-3xl text-white/80 transition-colors hover:text-white"
+                    className={`font-serif text-3xl transition-colors hover:text-white ${
+                      pathname === link.href ? "text-white" : "text-white/80"
+                    }`}
                   >
                     {link.label}
                   </Link>
