@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "Central Dental Clinic | Clinică Stomatologică Premium Sighetu Marmației",
-    template: "%s — Central Dental Clinic",
+    template: "%s - Central Dental Clinic",
   },
   description:
     "Clinică stomatologică premium în Sighetu Marmației, Maramureș. Estetică dentară, fațete ceramice, implantologie All-on-4/All-on-6, ortodonție. Fondată de Dr. Șofineți Ivan Marian.",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Central Dental Clinic — Clinică stomatologică premium în Sighetu Marmației",
+        alt: "Central Dental Clinic - Clinică stomatologică premium în Sighetu Marmației",
       },
     ],
   },
