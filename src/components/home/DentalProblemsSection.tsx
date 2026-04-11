@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -59,10 +59,32 @@ const PROBLEMS = [
 
 export function DentalProblemsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const [inView, setInView] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
   const active = PROBLEMS[activeIndex];
 
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setInView(entry.isIntersecting),
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (paused || !inView) return;
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % PROBLEMS.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [paused, inView]);
+
   return (
-    <section className="bg-black section-padding overflow-hidden">
+    <section ref={sectionRef} className="bg-black section-padding overflow-hidden">
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <ScrollReveal>
           <p className="text-center text-[13px] font-medium uppercase tracking-premium text-white/40">
@@ -78,7 +100,11 @@ export function DentalProblemsSection() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <div className="mt-14 grid items-center gap-10 md:grid-cols-2 md:gap-16">
+          <div
+            className="mt-14 grid items-center gap-10 md:grid-cols-2 md:gap-16"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
             {/* Image */}
             <div className="relative flex items-center justify-center">
               <AnimatePresence mode="wait">
@@ -109,7 +135,7 @@ export function DentalProblemsSection() {
                 {PROBLEMS.map((problem, i) => (
                   <button
                     key={problem.id}
-                    onClick={() => setActiveIndex(i)}
+                    onClick={() => { setActiveIndex(i); setPaused(true); setTimeout(() => setPaused(false), 6000); }}
                     className={`relative px-4 py-2 text-[13px] font-medium uppercase tracking-premium transition-all duration-300 ${
                       i === activeIndex
                         ? "bg-white text-black"
@@ -167,7 +193,7 @@ export function DentalProblemsSection() {
             {PROBLEMS.map((_, i) => (
               <button
                 key={i}
-                onClick={() => setActiveIndex(i)}
+                onClick={() => { setActiveIndex(i); setPaused(true); setTimeout(() => setPaused(false), 6000); }}
                 className={`h-1.5 rounded-full transition-all duration-300 ${
                   i === activeIndex
                     ? "w-6 bg-white"
