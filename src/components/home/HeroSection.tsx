@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-screen flex-col items-center justify-between overflow-hidden pt-20 pb-10">
       <div
         className="absolute inset-0 scale-110 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url(/images/marble-bg.png)" }}
       />
       <div className="absolute inset-0 bg-white/10" />
 
-      <div className="relative z-10 flex flex-col items-center px-6 text-center">
+      <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -68,7 +68,7 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.8 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+        className="relative z-10"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
