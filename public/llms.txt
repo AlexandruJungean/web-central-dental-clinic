@@ -19,14 +19,14 @@
 
 ## Echipa medicală
 
-- Dr. Șofineți Ivan Marian — Fondator, Estetică Dentară
-- Dr. Brigitta — Ortodonție
-- Dr. Andreea — Parodontologie
-- Dr. Ionela — Pedodonție (stomatologie pediatrică)
-- Dr. Ionuț — Endodonție & Chirurgie orală
-- Ioana — Asistentă
-- Naomi — Asistentă
-- Maria — Asistentă
+- Dr. Șofineți Ivan Marian - Fondator, Estetică Dentară
+- Dr. Brigitta - Ortodonție
+- Dr. Andreea - Parodontologie
+- Dr. Ionela - Pedodonție (stomatologie pediatrică)
+- Dr. Ionuț - Endodonție & Chirurgie orală
+- Ioana - Asistentă
+- Naomi - Asistentă
+- Maria - Asistentă
 
 ## Servicii oferite
 
@@ -44,10 +44,10 @@
 
 ## Pachete principale (prețuri în EUR)
 
-- Hollywood Smile: 10 fațete dentare ceramice premium — include consultație, plan de tratament, investigații radiologice, certificat de calitate material, controale periodice
-- Hollywood Smile Plus: 20 fațete dentare ceramice premium — aceleași beneficii ca Hollywood Smile
-- All-on-4: Dantură fixă pe 4 implanturi — include evaluare tomografie 3D, plan personalizat, inserare 4 implanturi, lucrare provizorie, monitorizare 1 an, lucrare definitivă
-- All-on-6: Dantură fixă pe 6 implanturi — aceleași beneficii ca All-on-4
+- Hollywood Smile: 10 fațete dentare ceramice premium - include consultație, plan de tratament, investigații radiologice, certificat de calitate material, controale periodice
+- Hollywood Smile Plus: 20 fațete dentare ceramice premium - aceleași beneficii ca Hollywood Smile
+- All-on-4: Dantură fixă pe 4 implanturi - include evaluare tomografie 3D, plan personalizat, inserare 4 implanturi, lucrare provizorie, monitorizare 1 an, lucrare definitivă
+- All-on-6: Dantură fixă pe 6 implanturi - aceleași beneficii ca All-on-4
 
 ## Turism dentar
 
@@ -60,16 +60,16 @@ Central Dental Clinic oferă pachete complete de turism dentar pentru românii d
 - Prețuri transparente, fără costuri ascunse
 - Consultație inițială fără obligație financiară
 - Plata în rate prin parteneri bancari
-- Localizare în Sighetu Marmației — acces facil pentru pacienți din Maramureș și din diaspora
+- Localizare în Sighetu Marmației - acces facil pentru pacienți din Maramureș și din diaspora
 
 ## Pagini website
 
-- / — Pagina principală
-- /despre-noi — Povestea clinicii, echipa medicală, galerie, certificări
-- /tarife — Pachete cu prețuri și tarife individuale pe categorii
-- /testimoniale — Testimoniale video și recenzii Google
-- /contact — Formular de programare, adresă, hartă, program
-- /dental-tourism — Pachete turism dentar pentru diaspora (prețuri în EUR)
-- /politica-confidentialitate — Politica GDPR
-- /termeni-si-conditii — Termeni și condiții utilizare
-- /politica-cookies — Politica de cookies
+- / - Pagina principală
+- /despre-noi - Povestea clinicii, echipa medicală, galerie, certificări
+- /tarife - Pachete cu prețuri și tarife individuale pe categorii
+- /testimoniale - Testimoniale video și recenzii Google
+- /contact - Formular de programare, adresă, hartă, program
+- /dental-tourism - Pachete turism dentar pentru diaspora (prețuri în EUR)
+- /politica-confidentialitate - Politica GDPR
+- /termeni-si-conditii - Termeni și condiții utilizare
+- /politica-cookies - Politica de cookies

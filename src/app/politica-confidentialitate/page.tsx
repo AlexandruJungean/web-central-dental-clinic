@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Politica de confidențialitate — Central Dental Clinic",
+  title: "Politica de confidențialitate - Central Dental Clinic",
   description: "Politica de confidențialitate și protecția datelor cu caracter personal la Central Dental Clinic, Sighetu Marmației.",
 };
 
@@ -65,20 +65,20 @@ export default function PoliticaConfidentialitatePage() {
           <h2>4. Scopurile și temeiurile juridice ale prelucrării</h2>
           <p>Prelucrăm datele dumneavoastră pentru următoarele scopuri:</p>
           <ul>
-            <li><strong>Programarea consultațiilor și gestionarea solicitărilor</strong> — temei: executarea unui contract sau măsuri precontractuale (art. 6 alin. 1 lit. b GDPR)</li>
-            <li><strong>Comunicarea cu dumneavoastră</strong> (confirmări, răspunsuri la solicitări) — temei: executarea unui contract (art. 6 alin. 1 lit. b GDPR)</li>
-            <li><strong>Îmbunătățirea serviciilor și a website-ului</strong> — temei: interesul nostru legitim (art. 6 alin. 1 lit. f GDPR)</li>
-            <li><strong>Analiza traficului și comportamentului pe website</strong> (Google Analytics, META Pixel) — temei: consimțământul dumneavoastră (art. 6 alin. 1 lit. a GDPR)</li>
-            <li><strong>Respectarea obligațiilor legale</strong> — temei: obligație legală (art. 6 alin. 1 lit. c GDPR)</li>
+            <li><strong>Programarea consultațiilor și gestionarea solicitărilor</strong> - temei: executarea unui contract sau măsuri precontractuale (art. 6 alin. 1 lit. b GDPR)</li>
+            <li><strong>Comunicarea cu dumneavoastră</strong> (confirmări, răspunsuri la solicitări) - temei: executarea unui contract (art. 6 alin. 1 lit. b GDPR)</li>
+            <li><strong>Îmbunătățirea serviciilor și a website-ului</strong> - temei: interesul nostru legitim (art. 6 alin. 1 lit. f GDPR)</li>
+            <li><strong>Analiza traficului și comportamentului pe website</strong> (Google Analytics, META Pixel) - temei: consimțământul dumneavoastră (art. 6 alin. 1 lit. a GDPR)</li>
+            <li><strong>Respectarea obligațiilor legale</strong> - temei: obligație legală (art. 6 alin. 1 lit. c GDPR)</li>
           </ul>
 
           <h2>5. Destinatarii datelor</h2>
           <p>Datele dumneavoastră pot fi transmise către:</p>
           <ul>
-            <li><strong>Resend Inc.</strong> — serviciu de trimitere email-uri tranzacționale (confirmări programare)</li>
-            <li><strong>Google LLC</strong> — Google Analytics 4, Google Maps (analiză trafic, afișare hartă)</li>
-            <li><strong>Meta Platforms, Inc.</strong> — META Pixel (măsurarea eficienței campaniilor publicitare)</li>
-            <li><strong>Netlify, Inc.</strong> — serviciu de hosting website</li>
+            <li><strong>Resend Inc.</strong> - serviciu de trimitere email-uri tranzacționale (confirmări programare)</li>
+            <li><strong>Google LLC</strong> - Google Analytics 4, Google Maps (analiză trafic, afișare hartă)</li>
+            <li><strong>Meta Platforms, Inc.</strong> - META Pixel (măsurarea eficienței campaniilor publicitare)</li>
+            <li><strong>Netlify, Inc.</strong> - serviciu de hosting website</li>
           </ul>
           <p>
             Acești furnizori acționează în calitate de persoane împuternicite și prelucrează datele exclusiv conform instrucțiunilor noastre și cu respectarea unor garanții adecvate de protecție a datelor.
@@ -104,12 +104,12 @@ export default function PoliticaConfidentialitatePage() {
             În conformitate cu GDPR, aveți următoarele drepturi:
           </p>
           <ul>
-            <li><strong>Dreptul de acces</strong> — să solicitați informații despre datele pe care le deținem</li>
-            <li><strong>Dreptul la rectificare</strong> — să solicitați corectarea datelor inexacte</li>
-            <li><strong>Dreptul la ștergere</strong> — să solicitați ștergerea datelor („dreptul de a fi uitat")</li>
+            <li><strong>Dreptul de acces</strong> - să solicitați informații despre datele pe care le deținem</li>
+            <li><strong>Dreptul la rectificare</strong> - să solicitați corectarea datelor inexacte</li>
+            <li><strong>Dreptul la ștergere</strong> - să solicitați ștergerea datelor („dreptul de a fi uitat")</li>
             <li><strong>Dreptul la restricționarea prelucrării</strong></li>
             <li><strong>Dreptul la portabilitatea datelor</strong></li>
-            <li><strong>Dreptul de opoziție</strong> — să vă opuneți prelucrării bazate pe interes legitim</li>
+            <li><strong>Dreptul de opoziție</strong> - să vă opuneți prelucrării bazate pe interes legitim</li>
             <li><strong>Dreptul de a retrage consimțământul</strong> în orice moment, fără a afecta legalitatea prelucrării anterioare</li>
           </ul>
           <p>

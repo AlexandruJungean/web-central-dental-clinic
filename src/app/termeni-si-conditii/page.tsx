@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Termeni și condiții — Central Dental Clinic",
+  title: "Termeni și condiții - Central Dental Clinic",
   description: "Termenii și condițiile de utilizare a website-ului Central Dental Clinic, Sighetu Marmației.",
 };
 
@@ -52,7 +52,7 @@ export default function TermeniSiConditiiPage() {
 
           <h2>5. Proprietatea intelectuală</h2>
           <p>
-            Toate conținuturile prezente pe Website — inclusiv, dar fără a se limita la texte, fotografii, elemente grafice, logo-uri, pictograme, videoclipuri, design-ul Website-ului și structura bazei de date — sunt proprietatea S.C. ROYAL 3D SMILE DESIGN S.R.L. sau sunt utilizate cu acordul titularilor de drepturi și sunt protejate de legislația română și internațională privind dreptul de autor și proprietatea intelectuală.
+            Toate conținuturile prezente pe Website - inclusiv, dar fără a se limita la texte, fotografii, elemente grafice, logo-uri, pictograme, videoclipuri, design-ul Website-ului și structura bazei de date - sunt proprietatea S.C. ROYAL 3D SMILE DESIGN S.R.L. sau sunt utilizate cu acordul titularilor de drepturi și sunt protejate de legislația română și internațională privind dreptul de autor și proprietatea intelectuală.
           </p>
           <p>
             Reproducerea, distribuirea, modificarea sau utilizarea conținuturilor în orice scop comercial fără acordul scris prealabil al Clinicii este strict interzisă.

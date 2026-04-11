@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Politica de cookies — Central Dental Clinic",
+  title: "Politica de cookies - Central Dental Clinic",
   description: "Informații despre cookie-urile utilizate pe website-ul Central Dental Clinic, Sighetu Marmației.",
 };
 
