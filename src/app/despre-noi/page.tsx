@@ -5,7 +5,7 @@ import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { TEAM } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Despre noi — Central Dental Clinic",
+  title: "Despre noi - Central Dental Clinic",
   description:
     "Povestea Central Dental Clinic din Sighetu Marmației. Echipa, misiunea și valorile clinicii fondată de Dr. Șofineți Ivan Marian.",
 };
@@ -41,7 +41,7 @@ export default function DespreNoiPage() {
 
             <ScrollReveal delay={0.1}>
               <ImagePlaceholder
-                label="FOTOGRAFIE — Dr. Șofineți Ivan Marian la lucru în clinică sau portret cu echipa. Format landscape sau pătrat."
+                label="FOTOGRAFIE - Dr. Șofineți Ivan Marian la lucru în clinică sau portret cu echipa. Format landscape sau pătrat."
                 aspectRatio="aspect-square"
                 className="w-full"
               />
@@ -67,7 +67,7 @@ export default function DespreNoiPage() {
               },
               {
                 title: "Viziune",
-                text: "Să devenim centrul de referință în stomatologie din Maramureș — locul unde oamenii vin cu încredere pentru orice nevoie dentară.",
+                text: "Să devenim centrul de referință în stomatologie din Maramureș - locul unde oamenii vin cu încredere pentru orice nevoie dentară.",
               },
               {
                 title: "Valori",
@@ -175,21 +175,21 @@ export default function DespreNoiPage() {
           <div className="grid gap-3 md:grid-cols-3">
             <ScrollReveal>
               <ImagePlaceholder
-                label="INTERIOR — Recepție / sală de așteptare. Unghi larg."
+                label="INTERIOR - Recepție / sală de așteptare. Unghi larg."
                 aspectRatio="aspect-[4/3]"
                 className="w-full"
               />
             </ScrollReveal>
             <ScrollReveal delay={0.08}>
               <ImagePlaceholder
-                label="INTERIOR — Sala de tratament principală. Scaun dentar, echipamente."
+                label="INTERIOR - Sala de tratament principală. Scaun dentar, echipamente."
                 aspectRatio="aspect-[4/3]"
                 className="w-full"
               />
             </ScrollReveal>
             <ScrollReveal delay={0.16}>
               <ImagePlaceholder
-                label="INTERIOR — A doua sală sau alt unghi."
+                label="INTERIOR - A doua sală sau alt unghi."
                 aspectRatio="aspect-[4/3]"
                 className="w-full"
               />
@@ -199,14 +199,14 @@ export default function DespreNoiPage() {
           <div className="mt-3 grid gap-3 md:grid-cols-2">
             <ScrollReveal delay={0.1}>
               <ImagePlaceholder
-                label="DETALIU — Echipament / scanner / tehnologie. Adâncime de câmp mică."
+                label="DETALIU - Echipament / scanner / tehnologie. Adâncime de câmp mică."
                 aspectRatio="aspect-[3/2]"
                 className="w-full"
               />
             </ScrollReveal>
             <ScrollReveal delay={0.18}>
               <ImagePlaceholder
-                label="DETALIU — Echipament / instrumente / scaun premium."
+                label="DETALIU - Echipament / instrumente / scaun premium."
                 aspectRatio="aspect-[3/2]"
                 className="w-full"
               />

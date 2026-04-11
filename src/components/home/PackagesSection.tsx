@@ -49,20 +49,20 @@ function PackageCard({
 
   return (
     <ScrollReveal delay={index * 0.1}>
-      <div className="border border-gray-separator p-8 transition-shadow hover:shadow-[0_4px_24px_rgba(0,0,0,0.04)] md:p-10">
-        <h3 className="font-serif text-2xl font-light text-foreground md:text-3xl">
+      <div className="border border-white/15 p-8 transition-shadow hover:shadow-[0_4px_24px_rgba(255,255,255,0.04)] md:p-10">
+        <h3 className="font-serif text-2xl font-light text-white md:text-3xl">
           {pkg.name}
         </h3>
-        <p className="mt-3 text-sm font-medium uppercase tracking-premium text-gray-subtle">
+        <p className="mt-3 text-sm font-medium uppercase tracking-premium text-white/40">
           {pkg.count} {pkg.unit}
         </p>
-        <p className="mt-4 text-[15px] leading-relaxed text-gray-text">
+        <p className="mt-4 text-[15px] leading-relaxed text-white/60">
           {pkg.description}
         </p>
 
         <button
           onClick={() => setOpen(!open)}
-          className="mt-6 flex items-center gap-2 text-[13px] font-medium uppercase tracking-premium text-gray-subtle transition-colors hover:text-foreground"
+          className="mt-6 flex items-center gap-2 text-[13px] font-medium uppercase tracking-premium text-white/40 transition-colors hover:text-white"
         >
           {open ? "Ascunde detalii" : "Ce conține pachetul"}
           <motion.svg
@@ -87,14 +87,14 @@ function PackageCard({
               transition={{ duration: 0.3 }}
               className="overflow-hidden"
             >
-              <div className="mt-4 space-y-2 border-t border-gray-separator pt-4">
+              <div className="mt-4 space-y-2 border-t border-white/10 pt-4">
                 {pkg.includes.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-2 text-[14px] text-gray-text"
+                    className="flex items-start gap-2 text-[14px] text-white/60"
                   >
                     <svg
-                      className="mt-0.5 h-4 w-4 shrink-0 text-foreground"
+                      className="mt-0.5 h-4 w-4 shrink-0 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -115,12 +115,12 @@ function PackageCard({
         </AnimatePresence>
 
         <div className="mt-8 flex items-end justify-between">
-          <span className="font-serif text-3xl font-light text-foreground md:text-4xl">
+          <span className="font-serif text-3xl font-light text-white md:text-4xl">
             {pkg.price}
           </span>
           <Link
             href="/contact"
-            className="inline-flex h-10 items-center px-6 text-[13px] font-medium uppercase tracking-premium text-white bg-black transition-opacity hover:opacity-80"
+            className="inline-flex h-10 items-center px-6 text-[13px] font-medium uppercase tracking-premium bg-white text-black transition-opacity hover:opacity-80"
           >
             Alege pachetul
           </Link>
@@ -132,13 +132,13 @@ function PackageCard({
 
 export function PackagesSection() {
   return (
-    <section className="bg-white section-padding">
+    <section className="bg-black section-padding">
       <div className="mx-auto max-w-[1000px] px-6 md:px-10">
         <ScrollReveal>
-          <p className="text-center text-[13px] font-medium uppercase tracking-premium text-gray-subtle">
+          <p className="text-center text-[13px] font-medium uppercase tracking-premium text-white/40">
             Pachete
           </p>
-          <h2 className="mt-3 text-center font-serif text-3xl font-light text-foreground md:text-5xl">
+          <h2 className="mt-3 text-center font-serif text-3xl font-light text-white md:text-5xl">
             Alege pachetul potrivit
           </h2>
         </ScrollReveal>
@@ -150,13 +150,13 @@ export function PackagesSection() {
         </div>
 
         <ScrollReveal delay={0.2}>
-          <p className="mt-8 text-center text-sm text-gray-subtle">
+          <p className="mt-8 text-center text-sm text-white/40">
             Plata în rate disponibilă prin partenerii noștri bancari
           </p>
           <div className="mt-4 flex items-center justify-center gap-4 text-center">
             <Link
               href="/tarife"
-              className="inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-premium text-gray-subtle transition-colors hover:text-foreground"
+              className="inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-premium text-white/40 transition-colors hover:text-white"
             >
               Vedeți toate tarifele
               <svg

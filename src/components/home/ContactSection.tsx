@@ -4,15 +4,21 @@ import { CONTACT } from "@/lib/constants";
 
 export function ContactSection() {
   return (
-    <section className="bg-black section-padding">
-      <div className="mx-auto max-w-[1200px] px-6 md:px-10">
+    <section className="relative section-padding overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: "url(/images/marble-bg.png)" }}
+      />
+      <div className="absolute inset-0 bg-white/70" />
+
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 md:px-10">
         <div className="grid gap-16 md:grid-cols-2 md:gap-20">
           <div>
             <ScrollReveal>
-              <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">
+              <p className="text-[13px] font-medium uppercase tracking-premium text-gray-subtle">
                 Programare
               </p>
-              <h2 className="mt-3 font-serif text-3xl font-light text-white md:text-5xl">
+              <h2 className="mt-3 font-serif text-3xl font-light text-foreground md:text-5xl">
                 Să discutăm despre
                 <br />
                 zâmbetul tău
@@ -21,7 +27,7 @@ export function ContactSection() {
 
             <ScrollReveal delay={0.1}>
               <div className="mt-12">
-                <ContactForm variant="dark" />
+                <ContactForm variant="light" />
               </div>
             </ScrollReveal>
           </div>
@@ -30,26 +36,26 @@ export function ContactSection() {
             <ScrollReveal>
               <div className="space-y-8">
                 <div>
-                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">Adresă</p>
-                  <p className="mt-2 text-[15px] text-white/70">
+                  <p className="text-[13px] font-medium uppercase tracking-premium text-gray-subtle">Adresă</p>
+                  <p className="mt-2 text-[15px] text-gray-text">
                     {CONTACT.address.street}<br />{CONTACT.address.city}
                   </p>
                 </div>
                 <div>
-                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">Telefon</p>
-                  <a href={CONTACT.phoneHref} className="mt-2 block text-[15px] text-white/70 transition-colors hover:text-white">
+                  <p className="text-[13px] font-medium uppercase tracking-premium text-gray-subtle">Telefon</p>
+                  <a href={CONTACT.phoneHref} className="mt-2 block text-[15px] text-foreground transition-opacity hover:opacity-70">
                     {CONTACT.phone}
                   </a>
                 </div>
                 <div>
-                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">Email</p>
-                  <a href={`mailto:${CONTACT.email}`} className="mt-2 block text-[15px] text-white/70 transition-colors hover:text-white">
+                  <p className="text-[13px] font-medium uppercase tracking-premium text-gray-subtle">Email</p>
+                  <a href={`mailto:${CONTACT.email}`} className="mt-2 block text-[15px] text-foreground transition-opacity hover:opacity-70">
                     {CONTACT.email}
                   </a>
                 </div>
                 <div>
-                  <p className="text-[13px] font-medium uppercase tracking-premium text-white/40">Program</p>
-                  <p className="mt-2 text-[15px] text-white/70">
+                  <p className="text-[13px] font-medium uppercase tracking-premium text-gray-subtle">Program</p>
+                  <p className="mt-2 text-[15px] text-gray-text">
                     {CONTACT.schedule.weekdays}<br />{CONTACT.schedule.saturday}
                   </p>
                 </div>
@@ -62,7 +68,7 @@ export function ContactSection() {
                   href={CONTACT.maps}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-premium text-white/40 transition-colors hover:text-white"
+                  className="inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-premium text-gray-subtle transition-colors hover:text-foreground"
                 >
                   Deschide în Google Maps
                   <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

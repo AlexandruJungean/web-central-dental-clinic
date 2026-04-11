@@ -11,33 +11,33 @@ const LEAD_DOCTOR = {
   role: "Fondator · Estetică Dentară",
   bio: "Cu o pasiune profundă pentru excelența în stomatologie, Dr. Șofineți a fondat Central Dental Clinic cu o viziune clară: să ofere fiecărui pacient tratamente de cea mai înaltă calitate, într-un mediu construit pe încredere și atenție la detalii.",
   imageLabel:
-    "PORTRET EDITORIAL — Dr. Șofineți Ivan Marian. Bust sau 3/4, privire directă în cameră, fundal neutru, iluminare laterală premium.",
+    "PORTRET EDITORIAL - Dr. Șofineți Ivan Marian. Bust sau 3/4, privire directă în cameră, fundal neutru, iluminare laterală premium.",
 };
 
 const TEAM_MEMBERS = [
   {
     name: "Dr. Brigitta",
     role: "Ortodonție",
-    bio: "Specializată în ortodonție modernă, Dr. Brigitta oferă soluții personalizate pentru alinierea dinților — de la alignere transparente la aparate estetice — cu atenție la confort și rezultate de durată.",
-    imageLabel: "PORTRET — Dr. Brigitta. Bust, stil consistent cu echipa.",
+    bio: "Specializată în ortodonție modernă, Dr. Brigitta oferă soluții personalizate pentru alinierea dinților - de la alignere transparente la aparate estetice - cu atenție la confort și rezultate de durată.",
+    imageLabel: "PORTRET - Dr. Brigitta. Bust, stil consistent cu echipa.",
   },
   {
     name: "Dr. Andreea",
     role: "Parodontologie",
     bio: "Cu experiență în tratamentul și prevenirea afecțiunilor gingivale, Dr. Andreea pune accent pe sănătatea pe termen lung a țesuturilor de suport ale dinților.",
-    imageLabel: "PORTRET — Dr. Andreea. Bust, stil consistent cu echipa.",
+    imageLabel: "PORTRET - Dr. Andreea. Bust, stil consistent cu echipa.",
   },
   {
     name: "Dr. Ionela",
     role: "Pedodonție",
     bio: "Dedicată îngrijirii dentare a celor mici, Dr. Ionela transformă fiecare vizită la dentist într-o experiență pozitivă, fără frică, adaptată nevoilor copiilor.",
-    imageLabel: "PORTRET — Dr. Ionela. Bust, stil consistent cu echipa.",
+    imageLabel: "PORTRET - Dr. Ionela. Bust, stil consistent cu echipa.",
   },
   {
     name: "Dr. Ionuț",
     role: "Endodonție\n& Chirurgie",
     bio: "Specializat în tratamente de canal și intervenții chirurgicale orale, Dr. Ionuț combină precizia cu tehnologia modernă pentru rezultate predictibile.",
-    imageLabel: "PORTRET — Dr. Ionuț. Bust, stil consistent cu echipa.",
+    imageLabel: "PORTRET - Dr. Ionuț. Bust, stil consistent cu echipa.",
   },
 ];
 
