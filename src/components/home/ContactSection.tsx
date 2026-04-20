@@ -56,7 +56,7 @@ export function ContactSection() {
                 <div>
                   <p className="text-[13px] font-medium uppercase tracking-premium text-gray-subtle">Program</p>
                   <p className="mt-2 text-[15px] text-gray-text">
-                    {CONTACT.schedule.weekdays}<br />{CONTACT.schedule.saturday}
+                    {CONTACT.schedule.weekdays}<br />{CONTACT.schedule.saturday}<br />{CONTACT.schedule.sunday}
                   </p>
                 </div>
               </div>
