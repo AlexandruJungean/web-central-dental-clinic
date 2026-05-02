@@ -35,15 +35,40 @@ export const CONTACT = {
 
 export const TEAM = {
   doctors: [
-    { name: "Dr. Șofineți Ivan Marian", role: "Fondator · Estetică Dentară", lead: true },
-    { name: "Dr. Brigitta", role: "Ortodonție", lead: false },
-    { name: "Dr. Andreea", role: "Parodontologie", lead: false },
-    { name: "Dr. Ionela", role: "Pedodonție", lead: false },
-    { name: "Dr. Ionuț", role: "Endodonție & Chirurgie", lead: false },
+    {
+      name: "Dr. Șofineți Ivan Marian",
+      role: "Fondator · Estetică Dentară",
+      image: "/images/echipa/IVAN.webp",
+      lead: true,
+    },
+    {
+      name: "Dr. Brigitta",
+      role: "Ortodonție",
+      image: "/images/echipa/BRIGITTE.webp",
+      lead: false,
+    },
+    {
+      name: "Dr. Andreea",
+      role: "Parodontologie",
+      image: "/images/echipa/ANDREEA.webp",
+      lead: false,
+    },
+    {
+      name: "Dr. Ionela",
+      role: "Pedodonție",
+      image: "/images/echipa/IONELA.webp",
+      lead: false,
+    },
+    {
+      name: "Dr. Ionuț",
+      role: "Endodonție & Chirurgie",
+      image: "/images/echipa/IONUT.webp",
+      lead: false,
+    },
   ],
   assistants: [
-    { name: "Ioana", role: "Asistentă" },
-    { name: "Naomi", role: "Asistentă" },
-    { name: "Maria", role: "Asistentă" },
+    { name: "Ioana", role: "Asistentă", image: null },
+    { name: "Naomi", role: "Asistentă", image: "/images/echipa/NAOMI.webp" },
+    { name: "Maria", role: "Asistentă", image: "/images/echipa/MARIA.webp" },
   ],
 } as const;

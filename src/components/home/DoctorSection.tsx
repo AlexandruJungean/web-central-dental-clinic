@@ -1,43 +1,42 @@
 "use client";
 
 import { useState, useRef, useCallback } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 const LEAD_DOCTOR = {
   name: "Dr. Șofineți\nIvan Marian",
   role: "Fondator · Estetică Dentară",
   bio: "Cu o pasiune profundă pentru excelența în stomatologie, Dr. Șofineți a fondat Central Dental Clinic cu o viziune clară: să ofere fiecărui pacient tratamente de cea mai înaltă calitate, într-un mediu construit pe încredere și atenție la detalii.",
-  imageLabel:
-    "PORTRET EDITORIAL - Dr. Șofineți Ivan Marian. Bust sau 3/4, privire directă în cameră, fundal neutru, iluminare laterală premium.",
+  image: "/images/echipa/IVAN.webp",
 };
 
 const TEAM_MEMBERS = [
   {
     name: "Dr. Brigitta",
     role: "Ortodonție",
-    bio: "Specializată în ortodonție modernă, Dr. Brigitta oferă soluții personalizate pentru alinierea dinților - de la alignere transparente la aparate estetice - cu atenție la confort și rezultate de durată.",
-    imageLabel: "PORTRET - Dr. Brigitta. Bust, stil consistent cu echipa.",
+    bio: "Specializată în ortodonție modernă, Dr. Brigitta oferă soluții personalizate pentru alinierea dinților — de la alignere transparente la aparate estetice — cu atenție la confort și rezultate de durată.",
+    image: "/images/echipa/BRIGITTE.webp",
   },
   {
     name: "Dr. Andreea",
     role: "Parodontologie",
     bio: "Cu experiență în tratamentul și prevenirea afecțiunilor gingivale, Dr. Andreea pune accent pe sănătatea pe termen lung a țesuturilor de suport ale dinților.",
-    imageLabel: "PORTRET - Dr. Andreea. Bust, stil consistent cu echipa.",
+    image: "/images/echipa/ANDREEA.webp",
   },
   {
     name: "Dr. Ionela",
     role: "Pedodonție",
     bio: "Dedicată îngrijirii dentare a celor mici, Dr. Ionela transformă fiecare vizită la dentist într-o experiență pozitivă, fără frică, adaptată nevoilor copiilor.",
-    imageLabel: "PORTRET - Dr. Ionela. Bust, stil consistent cu echipa.",
+    image: "/images/echipa/IONELA.webp",
   },
   {
     name: "Dr. Ionuț",
     role: "Endodonție\n& Chirurgie",
     bio: "Specializat în tratamente de canal și intervenții chirurgicale orale, Dr. Ionuț combină precizia cu tehnologia modernă pentru rezultate predictibile.",
-    imageLabel: "PORTRET - Dr. Ionuț. Bust, stil consistent cu echipa.",
+    image: "/images/echipa/IONUT.webp",
   },
 ];
 
@@ -70,11 +69,15 @@ export function DoctorSection() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.98 }}
                   transition={{ duration: 0.4, ease: "easeOut" }}
+                  className="relative aspect-[3/4] w-full overflow-hidden bg-gray-bg"
                 >
-                  <ImagePlaceholder
-                    label={active.imageLabel}
-                    aspectRatio="aspect-[3/4]"
-                    className="w-full"
+                  <Image
+                    src={active.image}
+                    alt={active.name.replace("\n", " ")}
+                    fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-cover"
+                    priority
                   />
                 </motion.div>
               </AnimatePresence>
@@ -124,40 +127,43 @@ export function DoctorSection() {
                   Echipa
                 </p>
                 <div className="grid grid-cols-4 gap-4 md:gap-6">
-                  {TEAM_MEMBERS.map((member) => (
-                    <button
-                      key={member.name}
-                      onClick={() =>
-                        selectMember(
-                          selected?.name === member.name ? null : member
-                        )
-                      }
-                      className="group text-center"
-                    >
-                      <motion.div
-                        whileHover={{ scale: 1.08 }}
-                        whileTap={{ scale: 0.95 }}
-                        transition={{ duration: 0.25, ease: "easeOut" }}
-                        className={`mx-auto transition-shadow duration-300 ${
-                          selected?.name === member.name
-                            ? "ring-2 ring-foreground ring-offset-2"
-                            : "group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
-                        }`}
+                  {TEAM_MEMBERS.map((member) => {
+                    const isSelected = selected?.name === member.name;
+                    return (
+                      <button
+                        key={member.name}
+                        onClick={() =>
+                          selectMember(isSelected ? null : member)
+                        }
+                        className="group text-center"
                       >
-                        <ImagePlaceholder
-                          label={`Portret ${member.name}`}
-                          aspectRatio="aspect-square"
-                          className="!h-16 !w-16 rounded-full md:!h-20 md:!w-20"
-                        />
-                      </motion.div>
-                      <p className="mt-2 text-[12px] font-medium text-foreground md:text-[13px]">
-                        {member.name}
-                      </p>
-                      <p className="whitespace-pre-line text-[11px] leading-tight text-gray-subtle md:text-[12px]">
-                        {member.role}
-                      </p>
-                    </button>
-                  ))}
+                        <motion.div
+                          whileHover={{ scale: 1.08 }}
+                          whileTap={{ scale: 0.95 }}
+                          transition={{ duration: 0.25, ease: "easeOut" }}
+                          className={`relative mx-auto h-16 w-16 overflow-hidden rounded-full transition-shadow duration-300 md:h-20 md:w-20 ${
+                            isSelected
+                              ? "ring-2 ring-foreground ring-offset-2"
+                              : "group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
+                          }`}
+                        >
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            fill
+                            sizes="80px"
+                            className="object-cover"
+                          />
+                        </motion.div>
+                        <p className="mt-2 text-[12px] font-medium text-foreground md:text-[13px]">
+                          {member.name}
+                        </p>
+                        <p className="whitespace-pre-line text-[11px] leading-tight text-gray-subtle md:text-[12px]">
+                          {member.role}
+                        </p>
+                      </button>
+                    );
+                  })}
                 </div>
                 <Link
                   href="/despre-noi"

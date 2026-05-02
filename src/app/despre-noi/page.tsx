@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
@@ -115,11 +116,15 @@ export default function DespreNoiPage() {
               {TEAM.doctors.map((doc, i) => (
                 <ScrollReveal key={doc.name} delay={i * 0.08}>
                   <div className="group text-center">
-                    <ImagePlaceholder
-                      label={`Portret ${doc.name}`}
-                      aspectRatio="aspect-[3/4]"
-                      className="w-full transition-shadow duration-300 group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)]"
-                    />
+                    <div className="relative aspect-[3/4] w-full overflow-hidden bg-gray-bg transition-shadow duration-300 group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+                      <Image
+                        src={doc.image}
+                        alt={doc.name}
+                        fill
+                        sizes="(min-width: 1024px) 220px, (min-width: 768px) 33vw, 50vw"
+                        className="object-cover"
+                      />
+                    </div>
                     <h3 className="mt-4 text-[15px] font-medium text-foreground">
                       {doc.name}
                     </h3>
@@ -144,11 +149,23 @@ export default function DespreNoiPage() {
               {TEAM.assistants.map((member, i) => (
                 <ScrollReveal key={member.name} delay={i * 0.08}>
                   <div className="group text-center">
-                    <ImagePlaceholder
-                      label={`Portret ${member.name}`}
-                      aspectRatio="aspect-[3/4]"
-                      className="w-full transition-shadow duration-300 group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)]"
-                    />
+                    {member.image ? (
+                      <div className="relative aspect-[3/4] w-full overflow-hidden bg-gray-bg transition-shadow duration-300 group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          fill
+                          sizes="(min-width: 768px) 33vw, 50vw"
+                          className="object-cover"
+                        />
+                      </div>
+                    ) : (
+                      <ImagePlaceholder
+                        label={`Portret ${member.name}`}
+                        aspectRatio="aspect-[3/4]"
+                        className="w-full transition-shadow duration-300 group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)]"
+                      />
+                    )}
                     <h3 className="mt-4 text-[15px] font-medium text-foreground">
                       {member.name}
                     </h3>
