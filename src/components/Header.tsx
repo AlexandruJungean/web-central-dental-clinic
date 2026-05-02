@@ -46,7 +46,7 @@ export function Header() {
               alt="Central Dental Clinic"
               width={36}
               height={36}
-              className="transition-all duration-500"
+              className="h-9 w-9 transition-all duration-500"
               priority
             />
           </Link>

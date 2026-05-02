@@ -26,7 +26,7 @@ export function Footer() {
                 alt="Central Dental Clinic"
                 width={40}
                 height={40}
-                className="invert"
+                className="h-10 w-10 invert"
               />
             </Link>
             <p className="mt-4 font-serif text-lg italic text-white/60">
