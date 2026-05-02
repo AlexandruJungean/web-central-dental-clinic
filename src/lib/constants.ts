@@ -67,7 +67,7 @@ export const TEAM = {
     },
   ],
   assistants: [
-    { name: "Ioana", role: "Asistentă", image: null },
+    { name: "Ioana", role: "Asistentă", image: "/images/echipa/IOANA.webp" },
     { name: "Naomi", role: "Asistentă", image: "/images/echipa/NAOMI.webp" },
     { name: "Maria", role: "Asistentă", image: "/images/echipa/MARIA.webp" },
   ],
