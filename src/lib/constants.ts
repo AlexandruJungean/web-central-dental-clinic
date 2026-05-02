@@ -67,8 +67,8 @@ export const TEAM = {
     },
   ],
   assistants: [
-    { name: "Ioana", role: "Asistentă", image: "/images/echipa/Ioana%20-%20transparent.png" },
-    { name: "Naomi", role: "Asistentă", image: "/images/echipa/Naomi%20-%20transparent.png" },
-    { name: "Maria", role: "Asistentă", image: "/images/echipa/Maria%20-%20transparent.png" },
+    { name: "Ioana", role: "Asistentă", image: "/images/echipa/Ioana%20-%20transparent.png" as string | null },
+    { name: "Naomi", role: "Asistentă", image: "/images/echipa/Naomi%20-%20transparent.png" as string | null },
+    { name: "Maria", role: "Asistentă", image: "/images/echipa/Maria%20-%20transparent.png" as string | null },
   ],
 } as const;
