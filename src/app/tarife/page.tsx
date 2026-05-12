@@ -259,8 +259,11 @@ export default function TarifePage() {
       <section className="bg-white pb-20">
         <div className="mx-auto max-w-[1100px] px-6 md:px-10">
           {PRICING_SECTIONS.map((section) => (
-            <ScrollReveal key={section.number}>
-              <div className="mt-28 first:mt-0 md:mt-40">
+            <ScrollReveal
+              key={section.number}
+              className="mt-20 first:mt-0 md:mt-28"
+            >
+              <div>
                 {/* Section header */}
                 <div className="flex items-baseline gap-5 border-b border-foreground pb-5 md:gap-7">
                   <span className="font-serif text-3xl font-light text-gray-subtle md:text-5xl">
