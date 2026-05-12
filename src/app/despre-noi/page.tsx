@@ -279,7 +279,8 @@ export default function DespreNoiPage() {
               Veniți să ne cunoaștem
             </h2>
             <p className="mt-4 text-[15px] text-white/50">
-              Consultația inițială este fără obligație financiară.
+              Programează o consultație și discutăm despre planul de tratament
+              potrivit pentru tine.
             </p>
             <div className="mt-8">
               <Link

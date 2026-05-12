@@ -14,11 +14,11 @@ const PACKAGES = [
       "Zâmbet complet transformat, cu formă, proporții și culoare perfect adaptate trăsăturilor tale.",
     price: "€X.000",
     includes: [
-      "Consultație de specialitate fără obligație financiară",
+      "Consultație de specialitate inclusă",
       "Plan de tratament complet personalizat",
       "Investigații radiologice complete",
       "Certificat de calitate al materialului",
-      "Controale periodice fără obligație financiară",
+      "Controale periodice incluse",
     ],
   },
   {
@@ -29,11 +29,11 @@ const PACKAGES = [
       "Pentru un zâmbet integral uniform, luminos și armonios - sus și jos.",
     price: "€X.000",
     includes: [
-      "Consultație de specialitate fără obligație financiară",
+      "Consultație de specialitate inclusă",
       "Plan de tratament complet personalizat",
       "Investigații radiologice complete",
       "Certificat de calitate al materialului",
-      "Controale periodice fără obligație financiară",
+      "Controale periodice incluse",
     ],
   },
 ];

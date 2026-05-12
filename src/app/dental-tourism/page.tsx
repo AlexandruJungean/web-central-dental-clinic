@@ -45,7 +45,7 @@ const PACKAGES = [
     detail: "10 fațete ceramice premium",
     price: "€X.XXX",
     includes: [
-      "Consultație fără obligație financiară",
+      "Consultație inclusă",
       "Plan de tratament personalizat",
       "Investigații radiologice complete",
       "10 fațete ceramice E-max",
@@ -58,7 +58,7 @@ const PACKAGES = [
     detail: "20 fațete ceramice premium",
     price: "€X.XXX",
     includes: [
-      "Consultație fără obligație financiară",
+      "Consultație inclusă",
       "Plan de tratament personalizat",
       "Investigații radiologice complete",
       "20 fațete ceramice E-max",

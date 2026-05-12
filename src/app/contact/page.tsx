@@ -22,8 +22,9 @@ export default function ContactPage() {
               Programează o consultație
             </h1>
             <p className="mt-4 max-w-[500px] text-[15px] leading-relaxed text-gray-text">
-              Completează formularul de mai jos sau contactează-ne direct.
-              Consultația inițială este fără obligație financiară.
+              Completează formularul de mai jos sau contactează-ne direct. Te
+              contactăm în cel mai scurt timp pentru a stabili detaliile
+              programării.
             </p>
           </ScrollReveal>
 
