@@ -17,7 +17,7 @@ const TEAM_MEMBERS = [
   {
     name: "Dr. Brigitta",
     role: "Ortodonție",
-    bio: "Specializată în ortodonție modernă, Dr. Brigitta oferă soluții personalizate pentru alinierea dinților — de la alignere transparente la aparate estetice — cu atenție la confort și rezultate de durată.",
+    bio: "Specializată în ortodonție modernă, Dr. Brigitta oferă soluții personalizate pentru alinierea dinților - de la alignere transparente la aparate estetice - cu atenție la confort și rezultate de durată.",
     image: "/images/echipa/Brigitte%20-%20transparent.webp",
   },
   {

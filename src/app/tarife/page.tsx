@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Tarife — Central Dental Clinic",
+  title: "Tarife - Central Dental Clinic",
   description:
     "Tarife estimative pentru toate tratamentele stomatologice la Central Dental Clinic, Sighetu Marmației. Prețuri transparente, fără costuri ascunse.",
 };
@@ -41,7 +41,7 @@ const PRICING_SECTIONS: PriceSection[] = [
       {
         service: "Diagnostic complet",
         includes:
-          "CBCT, scanări faciale și intraorale, fotografii HD — integrate într-un dosar digital complet. Include toate costurile investigațiilor necesare cazului.",
+          "CBCT, scanări faciale și intraorale, fotografii HD - integrate într-un dosar digital complet. Include toate costurile investigațiilor necesare cazului.",
         price: "1.000 lei",
       },
     ],
@@ -63,7 +63,7 @@ const PRICING_SECTIONS: PriceSection[] = [
     name: "Tratamente de Rutină",
     items: [
       {
-        service: "Obturații compozite — zona posterioară",
+        service: "Obturații compozite - zona posterioară",
         includes:
           "Plombe estetice stratificate cu morfologie naturală, pentru premolari și molari.",
         price: "400 – 600 lei",
@@ -71,7 +71,7 @@ const PRICING_SECTIONS: PriceSection[] = [
       {
         service: "Fațetări directe cu compozit",
         includes:
-          "Restaurări estetice realizate direct în cabinet, prin tehnici de stratificare a compozitului în zona estetică — pentru îmbunătățirea formei, culorii și armoniei zâmbetului.",
+          "Restaurări estetice realizate direct în cabinet, prin tehnici de stratificare a compozitului în zona estetică - pentru îmbunătățirea formei, culorii și armoniei zâmbetului.",
         price: "600 – 800 lei",
       },
       {
@@ -101,7 +101,7 @@ const PRICING_SECTIONS: PriceSection[] = [
       {
         service: "Element ceramic",
         includes:
-          "Restaurare estetică premium — design digital, frezare monolitică sau stratificare manuală, finisaj realizat de tehnician dentar. Materialul (compozit hibrid, ceramică feldspatică sau zirconiu) se alege împreună cu medicul în funcție de caz și buget.",
+          "Restaurare estetică premium - design digital, frezare monolitică sau stratificare manuală, finisaj realizat de tehnician dentar. Materialul (compozit hibrid, ceramică feldspatică sau zirconiu) se alege împreună cu medicul în funcție de caz și buget.",
         price: "€300 – €600",
       },
     ],
