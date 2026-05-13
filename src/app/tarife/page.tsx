@@ -122,31 +122,30 @@ const PRICING_SECTIONS: PriceSection[] = [
         price: "€650",
       },
       {
-        service: "Coroană provizorie",
-        includes: "Restaurare temporară în perioada de integrare a implantului.",
+        service: "Coroană provizorie (Add-on)",
+        includes: "Restaurare temporară în perioada de integrare.",
         price: "€50",
       },
       {
-        service: "Bont + componente",
-        includes:
-          "Bont fizionomic, componente din sistem personalizat în funcție de caz.",
-        price: "€150 – €300",
+        service: "Bont protetic / componente",
+        includes: "Include bont personalizat sau sistem cu șurub.",
+        price: "€50 – €300",
       },
       {
-        service: "Grefă de țesut moale",
-        includes: "Situațional, pentru optimizarea esteticii peri-implantare.",
+        service: "Grefă de țesut moale (Situațional)",
+        includes: "Grefă conjunctivă sau liberă, ghidată protetic.",
         price: "€100",
       },
       {
-        service: "GBR / Sinus Lift",
+        service: "GBR / Sinus Lift (Situațional)",
         includes:
-          "Grefă osoasă sau augmentare sinusală pentru susținerea implantului. Situațional.",
+          "Grefă osoasă sau augmentare sinusală pentru susținerea implantului.",
         price: "€600 – €800",
       },
       {
-        service: "PRF (add-on)",
+        service: "PRF (Add-on)",
         includes:
-          "Protocol cu fibrină autologă pentru vindecare și integrare optimă.",
+          "Protocol cu fibrină autologă pentru vindecare și integrare.",
         price: "€200",
       },
     ],
