@@ -193,8 +193,8 @@ export default function DentalTourismPage() {
       />
       <BreadcrumbSchema
         items={[
-          { name: "Acasă", url: "https://centraldental.ro" },
-          { name: "Turism Dentar", url: "https://centraldental.ro/dental-tourism" },
+          { name: "Acasă", url: "https://centraldentalclinic.ro" },
+          { name: "Turism Dentar", url: "https://centraldentalclinic.ro/dental-tourism" },
         ]}
       />
       {/* S1 - Hero */}

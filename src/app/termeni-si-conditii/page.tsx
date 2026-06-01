@@ -23,7 +23,7 @@ export default function TermeniSiConditiiPage() {
 
           <h2>1. Informații generale</h2>
           <p>
-            Prezentul document stabilește termenii și condițiile de utilizare a website-ului centraldental.ro (denumit în continuare „Website-ul"), operat de S.C. ROYAL 3D SMILE DESIGN S.R.L., cu sediul în Strada Andrei Mureșan 5, 435500 Sighetu Marmației, Maramureș, România (denumit în continuare „Clinica" sau „Operatorul").
+            Prezentul document stabilește termenii și condițiile de utilizare a website-ului centraldentalclinic.ro (denumit în continuare „Website-ul"), operat de S.C. ROYAL 3D SMILE DESIGN S.R.L., cu sediul în Strada Andrei Mureșan 5, 435500 Sighetu Marmației, Maramureș, România (denumit în continuare „Clinica" sau „Operatorul").
           </p>
           <p>
             Prin accesarea și utilizarea Website-ului, confirmați că ați citit, înțeles și acceptat acești termeni și condiții în integralitatea lor.

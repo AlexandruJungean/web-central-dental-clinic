@@ -1,4 +1,4 @@
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://centraldental.ro";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://centraldentalclinic.ro";
 
 const localBusinessSchema = {
   "@context": "https://schema.org",

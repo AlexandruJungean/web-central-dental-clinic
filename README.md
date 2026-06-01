@@ -3,7 +3,7 @@
 Website premium pentru Central Dental Clinic, Sighetu Marmatiei.
 Fondator: Dr. Sofineti Ivan Marian.
 
-**Live:** [centraldental.ro](https://centraldental.ro)
+**Live:** [centraldentalclinic.ro](https://centraldentalclinic.ro)
 
 ---
 
@@ -45,10 +45,10 @@ Open [http://localhost:3000](http://localhost:3000).
 Create `.env.local` in project root:
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://centraldental.ro
+NEXT_PUBLIC_SITE_URL=https://centraldentalclinic.ro
 RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 NOTIFY_EMAIL=alex.jungean@gmail.com
-FROM_EMAIL=noreply@centraldental.ro
+FROM_EMAIL=noreply@centraldentalclinic.ro
 ```
 
 | Variable | Description |
