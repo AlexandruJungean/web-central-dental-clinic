@@ -35,7 +35,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="mb-4 text-[13px] font-medium uppercase tracking-[0.12em] text-white/40">
+            <p className="mb-4 text-[13px] font-medium uppercase tracking-[0.12em] text-white/60">
               Navigare
             </p>
             <nav className="flex flex-col gap-3">
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="mb-4 text-[13px] font-medium uppercase tracking-[0.12em] text-white/40">
+            <p className="mb-4 text-[13px] font-medium uppercase tracking-[0.12em] text-white/60">
               Contact
             </p>
             <div className="flex flex-col gap-3 text-[15px] text-white/60">
@@ -86,20 +86,20 @@ export function Footer() {
         </div>
 
         <div className="mt-16 border-t border-white/10 pt-8">
-          <div className="text-[12px] leading-relaxed text-white/25">
+          <div className="text-[12px] leading-relaxed text-white/60">
             <p>
               ROYAL 3D SMILE DESIGN S.R.L. · CUI 39231116 · Nr. Reg. Com. J20/553244/2018 · EUID ROONRC.J2018000553244
             </p>
           </div>
 
-          <div className="mt-6 flex flex-col items-start justify-between gap-4 text-[13px] text-white/30 md:flex-row md:items-center">
+          <div className="mt-6 flex flex-col items-start justify-between gap-4 text-[13px] text-white/60 md:flex-row md:items-center">
             <p>&copy; {new Date().getFullYear()} Central Dental Clinic</p>
             <div className="flex flex-wrap gap-4 md:gap-6">
               {LEGAL_LINKS.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="transition-colors hover:text-white/60"
+                  className="transition-colors hover:text-white"
                 >
                   {link.label}
                 </Link>

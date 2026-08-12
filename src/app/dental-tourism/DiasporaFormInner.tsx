@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useId, useState, useTransition } from "react";
 import { submitContactForm } from "@/lib/actions";
 
 const TREATMENTS = [
@@ -47,6 +47,9 @@ const selectClass =
   "w-full appearance-none border-b border-white/20 bg-transparent py-3 text-[15px] text-white/30 outline-none transition-colors focus:border-white/60 focus:text-white [&:not([value=''])]:text-white";
 
 export function DiasporaFormInner() {
+  const countryId = useId();
+  const treatmentId = useId();
+  const periodId = useId();
   const [isPending, startTransition] = useTransition();
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
@@ -119,21 +122,48 @@ export function DiasporaFormInner() {
       <input name="phone" type="tel" placeholder="Telefon sau WhatsApp" required className={inputClass} />
       <input name="email" type="email" placeholder="Email" required className={inputClass} />
 
-      <select name="country" required defaultValue="" className={selectClass}>
+      <label htmlFor={countryId} className="sr-only">
+        Țara de reședință
+      </label>
+      <select
+        id={countryId}
+        name="country"
+        required
+        defaultValue=""
+        className={selectClass}
+      >
         <option value="" disabled>Țara de reședință</option>
         {COUNTRIES.map((c) => (
           <option key={c} value={c} className="bg-black text-white">{c}</option>
         ))}
       </select>
 
-      <select name="treatment" required defaultValue="" className={selectClass}>
+      <label htmlFor={treatmentId} className="sr-only">
+        Tratament dorit
+      </label>
+      <select
+        id={treatmentId}
+        name="treatment"
+        required
+        defaultValue=""
+        className={selectClass}
+      >
         <option value="" disabled>Tratament dorit</option>
         {TREATMENTS.map((t) => (
           <option key={t} value={t} className="bg-black text-white">{t}</option>
         ))}
       </select>
 
-      <select name="period" required defaultValue="" className={selectClass}>
+      <label htmlFor={periodId} className="sr-only">
+        Perioada estimată a vizitei
+      </label>
+      <select
+        id={periodId}
+        name="period"
+        required
+        defaultValue=""
+        className={selectClass}
+      >
         <option value="" disabled>Când planificați vizita</option>
         {VISIT_PERIODS.map((p) => (
           <option key={p} value={p} className="bg-black text-white">{p}</option>

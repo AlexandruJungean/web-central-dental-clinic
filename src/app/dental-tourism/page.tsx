@@ -157,34 +157,6 @@ const FAQ = [
   },
 ];
 
-const COUNTRIES = [
-  "Italia",
-  "Spania",
-  "Germania",
-  "Regatul Unit",
-  "Franța",
-  "Belgia",
-  "Austria",
-  "Olanda",
-  "Irlanda",
-  "Danemarca",
-  "Norvegia",
-  "Suedia",
-  "Elveția",
-  "Canada",
-  "SUA",
-  "Altă țară",
-];
-
-const VISIT_PERIODS = [
-  "Cât mai curând posibil",
-  "În următoarele 1-2 luni",
-  "În următoarele 3-6 luni",
-  "La vacanța de vară",
-  "La vacanța de iarnă",
-  "Nu m-am decis încă",
-];
-
 export default function DentalTourismPage() {
   return (
     <>

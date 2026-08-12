@@ -24,7 +24,7 @@ export default function PoliticaConfidentialitatePage() {
 
           <h2>1. Introducere</h2>
           <p>
-            S.C. ROYAL 3D SMILE DESIGN S.R.L., cu sediul în Strada Andrei Mureșan 5, 435500 Sighetu Marmației, Maramureș, România, operator al Central Dental Clinic (denumit în continuare „Clinica", „noi" sau „Operatorul"), respectă confidențialitatea datelor dumneavoastră cu caracter personal și se angajează să le protejeze în conformitate cu Regulamentul (UE) 2016/679 al Parlamentului European și al Consiliului din 27 aprilie 2016 privind protecția persoanelor fizice în ceea ce privește prelucrarea datelor cu caracter personal și privind libera circulație a acestor date (GDPR) și cu legislația națională aplicabilă.
+            S.C. ROYAL 3D SMILE DESIGN S.R.L., cu sediul în Strada Andrei Mureșan 5, 435500 Sighetu Marmației, Maramureș, România, operator al Central Dental Clinic (denumit în continuare „Clinica”, „noi” sau „Operatorul”), respectă confidențialitatea datelor dumneavoastră cu caracter personal și se angajează să le protejeze în conformitate cu Regulamentul (UE) 2016/679 al Parlamentului European și al Consiliului din 27 aprilie 2016 privind protecția persoanelor fizice în ceea ce privește prelucrarea datelor cu caracter personal și privind libera circulație a acestor date (GDPR) și cu legislația națională aplicabilă.
           </p>
           <p>
             Această politică de confidențialitate descrie modul în care colectăm, utilizăm, stocăm și protejăm datele dumneavoastră cu caracter personal atunci când utilizați website-ul nostru sau serviciile noastre.
@@ -106,7 +106,7 @@ export default function PoliticaConfidentialitatePage() {
           <ul>
             <li><strong>Dreptul de acces</strong> - să solicitați informații despre datele pe care le deținem</li>
             <li><strong>Dreptul la rectificare</strong> - să solicitați corectarea datelor inexacte</li>
-            <li><strong>Dreptul la ștergere</strong> - să solicitați ștergerea datelor („dreptul de a fi uitat")</li>
+            <li><strong>Dreptul la ștergere</strong> - să solicitați ștergerea datelor („dreptul de a fi uitat”)</li>
             <li><strong>Dreptul la restricționarea prelucrării</strong></li>
             <li><strong>Dreptul la portabilitatea datelor</strong></li>
             <li><strong>Dreptul de opoziție</strong> - să vă opuneți prelucrării bazate pe interes legitim</li>

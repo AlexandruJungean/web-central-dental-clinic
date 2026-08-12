@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useId, useState, useTransition } from "react";
 import { submitContactForm } from "@/lib/actions";
 import { TREATMENTS } from "@/lib/constants";
 
@@ -9,6 +9,7 @@ interface ContactFormProps {
 }
 
 export function ContactForm({ variant = "light" }: ContactFormProps) {
+  const treatmentId = useId();
   const [isPending, startTransition] = useTransition();
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
@@ -78,7 +79,16 @@ export function ContactForm({ variant = "light" }: ContactFormProps) {
         <input name="email" type="email" placeholder="Email" required className={inputClass} />
       </div>
       <div>
-        <select name="treatment" required defaultValue="" className={selectClass}>
+        <label htmlFor={treatmentId} className="sr-only">
+          Tratament dorit
+        </label>
+        <select
+          id={treatmentId}
+          name="treatment"
+          required
+          defaultValue=""
+          className={selectClass}
+        >
           <option value="" disabled>Tratament dorit</option>
           {TREATMENTS.map((t) => (
             <option key={t} value={t} className={isDark ? "bg-black text-white" : "bg-white text-foreground"}>
