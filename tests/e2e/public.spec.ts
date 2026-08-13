@@ -8,6 +8,7 @@ test("public homepage renders primary content", async ({ page }) => {
 });
 
 test("@accessibility public homepage has no WCAG AA violations", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");
   await expect(page.locator("h1").first()).toBeVisible();
   await expectNoAxeViolations(page);
