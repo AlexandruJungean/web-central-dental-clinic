@@ -27,7 +27,7 @@ export const CONTACT = {
   maps: "https://maps.app.goo.gl/Y8AWSVvfizCp2ah17",
   facebook: "https://www.facebook.com/royal.3d.smile.design/",
   schedule: {
-    weekdays: "Luni – Vineri: 08:00 – 16:00",
+    weekdays: "Luni – Vineri: 08:00 – 20:00",
     saturday: "Sâmbătă: Închis",
     sunday: "Duminică: Închis",
   },

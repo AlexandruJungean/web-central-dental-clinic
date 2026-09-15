@@ -117,7 +117,7 @@ export function DoctorSection() {
                 onClick={() => selectMember(null)}
                 className="mt-6 text-[13px] font-medium uppercase tracking-premium text-gray-subtle transition-colors hover:text-foreground"
               >
-                ← Înapoi la Dr. Șofineți
+                ← Înapoi
               </motion.button>
             )}
 
