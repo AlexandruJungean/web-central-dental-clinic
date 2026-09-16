@@ -5,10 +5,18 @@ export function BrandStatement() {
     <section className="bg-white section-padding">
       <div className="mx-auto max-w-[800px] px-6 text-center md:px-10">
         <ScrollReveal>
-          <p className="font-serif text-2xl font-light leading-relaxed text-foreground md:text-3xl lg:text-[2.5rem] lg:leading-[1.4]">
-            Fiecare zâmbet este o lucrare de precizie. Combinăm tehnologia
-            modernă cu atenția la fiecare detaliu pentru rezultate care vorbesc
-            de la sine.
+          <p className="text-[13px] font-medium uppercase tracking-premium text-gray-subtle">
+            Clinica
+          </p>
+          <p className="mt-5 font-serif text-2xl font-light leading-relaxed text-foreground md:text-3xl lg:text-[2.25rem] lg:leading-[1.4]">
+            Central Dental Clinic este clinica stomatologică din Sighetu
+            Marmației unde poți rezolva totul într-un singur loc.
+          </p>
+          <p className="mx-auto mt-6 max-w-[640px] text-[15px] leading-relaxed text-gray-text">
+            Fondată de Dr. Șofineți Ivan Marian, echipa noastră reunește
+            specialiști în estetică dentară, implantologie, ortodonție,
+            parodontologie, pedodonție și chirurgie orală. Tehnologie modernă,
+            materiale premium și un spațiu gândit pentru confort și încredere.
           </p>
         </ScrollReveal>
 
