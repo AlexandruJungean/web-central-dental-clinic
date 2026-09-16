@@ -107,14 +107,15 @@ const localBusinessSchema = {
   ],
   sameAs: [
     "https://www.facebook.com/royal.3d.smile.design/",
+    "https://www.instagram.com/centraldentalclinic.sighet/",
   ],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
     bestRating: "5",
     worstRating: "1",
-    ratingCount: "50",
-    reviewCount: "50",
+    ratingCount: "11",
+    reviewCount: "11",
   },
 };
 

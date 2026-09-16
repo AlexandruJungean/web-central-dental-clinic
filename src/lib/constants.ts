@@ -25,7 +25,10 @@ export const CONTACT = {
     city: "435500 Sighetu Marmației",
   },
   maps: "https://maps.app.goo.gl/Y8AWSVvfizCp2ah17",
+  googleReviews:
+    "https://www.google.com/maps/place/ROYAL+3D+SMILE+DESIGN+SRL+-+CENTRAL+DENTAL+CLINIC/@47.926696,23.88827,17z/data=!4m8!3m7!1s0x4737bbf9e5bc02a1:0xa52d0bda00f21948!8m2!3d47.926696!4d23.88827!9m1!1b1",
   facebook: "https://www.facebook.com/royal.3d.smile.design/",
+  instagram: "https://www.instagram.com/centraldentalclinic.sighet/",
   schedule: {
     weekdays: "Luni – Vineri: 08:00 – 20:00",
     saturday: "Sâmbătă: Închis",

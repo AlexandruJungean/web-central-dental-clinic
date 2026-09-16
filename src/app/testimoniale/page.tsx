@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { CONTACT } from "@/lib/constants";
+import { GOOGLE_RATING, REVIEWS } from "@/lib/reviews";
 
 export const metadata: Metadata = {
   title: "Testimoniale - Central Dental Clinic",
@@ -15,33 +17,6 @@ const VIDEO_TESTIMONIALS = [
   { id: "aZIiVDFbrgM", title: "Testimonial pacient #4 - Reabilitare totală", duration: "4:00" },
   { id: "aZIiVDFbrgM", title: "Testimonial pacient #5 - Estetică dentară", duration: "2:10" },
   { id: "aZIiVDFbrgM", title: "Testimonial pacient #6 - Dantură fixă", duration: "3:30" },
-];
-
-const REVIEWS = [
-  {
-    name: "Maria P.",
-    rating: 5,
-    text: "Profesionalism desăvârșit, cabinet de ultimă generație. Doctorul a fost extrem de atent și m-a pus în temă cu fiecare etapă a tratamentului. Recomand cu cea mai mare încredere!",
-    date: "Martie 2026",
-  },
-  {
-    name: "Andrei M.",
-    rating: 5,
-    text: "Am venit din Italia special pentru un tratament de implantologie. Totul a decurs perfect, de la primul contact pe WhatsApp până la finalizarea lucrării. Prețuri corecte și calitate excepțională.",
-    date: "Februarie 2026",
-  },
-  {
-    name: "Elena V.",
-    rating: 5,
-    text: "Clinica arată impecabil, iar echipa este foarte prietenoasă. Copilul meu s-a simțit în largul lui de la prima vizită. Am găsit în sfârșit un dentist de familie pe care putem conta.",
-    date: "Ianuarie 2026",
-  },
-  {
-    name: "Gheorghe D.",
-    rating: 5,
-    text: "După ani de zile cu proteze mobile, am ales să fac All-on-4. A fost cea mai bună decizie. Echipa a fost extraordinară, iar rezultatul depășește așteptările.",
-    date: "Decembrie 2025",
-  },
 ];
 
 export default function TestimonialePage() {
@@ -116,11 +91,11 @@ export default function TestimonialePage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-[13px] font-medium uppercase tracking-premium text-gray-subtle">
-                  Recenzii Google
+                  Recenzii
                 </p>
                 <div className="mt-3 flex items-center gap-3">
                   <span className="font-serif text-5xl font-light text-foreground">
-                    5.0
+                    {GOOGLE_RATING.value}
                   </span>
                   <div className="flex gap-0.5">
                     {Array.from({ length: 5 }).map((_, i) => (
@@ -132,7 +107,7 @@ export default function TestimonialePage() {
                 </div>
               </div>
               <a
-                href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review"
+                href={CONTACT.googleReviews}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden items-center gap-2 text-[13px] font-medium uppercase tracking-premium text-gray-subtle transition-colors hover:text-foreground md:inline-flex"
@@ -159,10 +134,7 @@ export default function TestimonialePage() {
                   <p className="mt-4 text-[15px] leading-relaxed text-gray-text italic">
                     &ldquo;{review.text}&rdquo;
                   </p>
-                  <div className="mt-4 flex items-center justify-between">
-                    <p className="text-[14px] font-medium text-foreground">{review.name}</p>
-                    <p className="text-[12px] text-gray-subtle">{review.date}</p>
-                  </div>
+                  <p className="mt-4 text-[14px] font-medium text-foreground">{review.name}</p>
                 </div>
               </ScrollReveal>
             ))}
